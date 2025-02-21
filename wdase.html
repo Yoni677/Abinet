@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>አብነት - ውዳሴ ማርያም</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>አብነት</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">መነሻ</a></li>
+            <li><a href="search.html">ፍለጋ</a></li>
+            <li><a href="liked.html">የተወደዱ</a></li>
+        </ul>
+        <div class="playlists">
+            <center><h3>የፀሎት ዝርዝሮች</h3></center>
+            <ul>
+                <li><a href="zezewetr.html">ጸሎተ ዘዘወትር</a></li>
+                <li><a href="wdase.html" class="active">ውዳሴ ማርያም</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="user-nav">
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="goBack()" disabled>◀</button>
+                    <button class="nav-btn" onclick="goForward()" disabled>▶</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="category-header">
+            <h1>ውዳሴ ማርያም</h1>
+            <p class="category-description">የእመቤታችን የሳምንቱ ውዳሴዎች</p>
+        </section>
+
+        <section class="prayers-grid">
+            <div class="prayer-card">
+                <h3>ውዳሴ ማርያም ዘሰኑይ</h3>
+                <p class="prayer-order">1</p>
+                <a href="prayer.html?id=monday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3>ውዳሴ ማርያም ዘሰሉስ</h3>
+                <p class="prayer-order">2</p>
+                <a href="prayer.html?id=tuesday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3> ውዳሴ ማርያም ዘረቡዕ</h3>
+                <p class="prayer-order">3</p>
+                <a href="prayer.html?id=wednesday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3> ውዳሴ ማርያም ዘሐሙስ</h3>
+                <p class="prayer-order">4</p>
+                <a href="prayer.html?id=thursday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3> ውዳሴ ማርያም ዘዓርብ</h3>
+                <p class="prayer-order">5</p>
+                <a href="prayer.html?id=friday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3>ውዳሴ ማርያም ዘቀዳሚት</h3>
+                <p class="prayer-order">6</p>
+                <a href="prayer.html?id=saturday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+            <div class="prayer-card">
+                <h3>ውዳሴ ማርያም ዘሰንበት</h3>
+                <p class="prayer-order">7</p>
+                <a href="prayer.html?id=sunday-wdase" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

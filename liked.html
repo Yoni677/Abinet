@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>አብነት - የተወደዱ ፀሎቶች</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>አብነት</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">መነሻ</a></li>
+            <li><a href="search.html">ፍለጋ</a></li>
+            <li><a href="liked.html" class="active">የተወደዱ</a></li>
+        </ul>
+        <div class="playlists">
+            <center><h3>የፀሎት ዝርዝሮች</h3></center>
+            <ul>
+
+                <li><a href="zezewetr.html">ጸሎተ ዘዘወትር</a></li>
+                <li><a href="wdase.html">ውዳሴ ማርያም</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="user-nav">
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="goBack()" disabled>◀</button>
+                    <button class="nav-btn" onclick="goForward()" disabled>▶</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="category-header">
+            <h1>የተወደዱ ፀሎቶች</h1>
+            <p class="category-description">እርስዎ የወደዷቸው ፀሎቶች</p>
+        </section>
+
+        <section id="liked-prayers" class="prayers-grid">
+            <!-- Liked prayers will be loaded here -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', initLikedPage);
+    </script>
+</body>
+</html> 

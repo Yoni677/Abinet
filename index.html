@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>አቢነት - የፀሎት መለማመጃ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>አብነት</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">መነሻ</a></li>
+            <li><a href="search.html">ፍለጋ</a></li>
+            <li><a href="liked.html">የተወደዱ</a></li>
+        </ul>
+        <div class="playlists">
+            <center><h3>የፀሎት ዝርዝሮች</h3></center>
+            <ul>
+                <li><a href="zezewetr.html">ጸሎተ ዘዘወትር</a></li>
+                <li><a href="wdase.html">ውዳሴ ማርያም</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="user-nav">
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="goBack()" disabled>◀</button>
+                    <button class="nav-btn" onclick="goForward()" disabled>▶</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="featured">
+            <h1>እንኳን ደህና መጡ</h1>
+            <div class="featured-grid">
+                <div class="prayer-card">
+                    <h3>አቡነ ዘበሰማያት</h3>
+                    <a href="prayer.html?id=abune-zebesemayat" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+                </div>
+                <div class="prayer-card">
+                    <h3>አአትብ</h3>
+                    <a href="prayer.html?id=aatb" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+                </div>
+                <div class="prayer-card">
+                    <h3>የእመቤታችን ሰላም</h3>
+                    <button class="play-btn">▶ ያዳምጡ</button>
+                </div>
+                <div class="prayer-card">
+                    <h3>መልካም ነው እግዚአብሔር</h3>
+                    <button class="play-btn">▶ ያዳምጡ</button>
+                </div>
+                <div class="prayer-card">
+                    <h3>ቅዱስ ቅዱስ ቅዱስ</h3>
+                    <a href="prayer.html?id=kidus kidus kidus" class="play-btn" onclick="navigateToPage(this.href); return false;">▶ ያዳምጡ</a>
+                </div>
+                <div class="prayer-card">
+                    <h3>የሐዋርያት ሃይማኖት</h3>
+                    <button class="play-btn">▶ ያዳምጡ</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="made-for-you">
+            <h2>ተወዳጅ ፀሎቶች</h2>
+            <div class="playlist-row">
+                <div class="playlist-item">
+                    <div class="playlist-cover"></div>
+                    <h4>ጸሎተ ዘዘወትር</h4>
+                    <p>የዕለት ተዕለት ፀሎቶች</p>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-cover"></div>
+                    <h4>ውዳሴ ማርያም</h4>
+                    <p>የእመቤታችን ውዳሴ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

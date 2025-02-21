@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>አቢነት - ፍለጋ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>አብነት</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">መነሻ</a></li>
+            <li><a href="search.html" class="active">ፍለጋ</a></li>
+            <li><a href="liked.html">የተወደዱ</a></li>
+        </ul>
+        <div class="playlists">
+            <center><h3>የፀሎት ዝርዝሮች</h3></center>
+            <ul>
+                <li><a href="zezewetr.html">ጸሎተ ዘዘወትር</a></li>
+                <li><a href="#">ውዳሴ ማርያም</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="user-nav">
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="goBack()" disabled>◀</button>
+                    <button class="nav-btn" onclick="goForward()" disabled>▶</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="ፀሎት ይፈልጉ..." oninput="handleSearch()">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="search-filters">
+                <button class="filter-btn active" data-filter="all">ሁሉም</button>
+                <button class="filter-btn" data-filter="ጸሎተ ዘዘወትር">ጸሎተ ዘዘወትር</button>
+                <button class="filter-btn" data-filter="ውዳሴ ማርያም">ውዳሴ ማርያም</button>
+            </div>
+            <div id="searchResults" class="search-results">
+                <!-- Results will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
